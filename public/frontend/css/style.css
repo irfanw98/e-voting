@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+}
+/*SCROLLTOP*/
+.scrollTop{
+	position: fixed;
+	background: #fff url(../img/scroll.png);
+	bottom: 800px;
+	right: 40px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-size: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	z-index: 10000;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.scrollTop.aktif{
+	bottom: 40px;
+	visibility: visible;
+	opacity: 1;
+}
+
+/* HEADER */
+.nav-menu .login:hover::after{
+	content: '';
+	display: block;
+	text-transform: uppercase;
+	border-bottom: 2px solid #f7631b;
+	width: 70%;
+	margin: auto;
+	padding-bottom: 5px;
+	margin-bottom: -7px;
+}
+
+/* CONTENT */
+.banner-content .fr-text{
+	text-shadow: 1px 1px 1px black;
+	font-weight: 500;
+}
+
+.banner-content .fr-text span{
+	text-shadow: 2px 2px 2px black;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+.banner-content .sub-text{
+	font-family: Viga;
+}
+
+
+.calon{
+	color: #2880ce;
+	font-weight: bold;
+}
+
+.calon::after{
+	content: '';
+	display: block;
+	border-bottom: 3px solid #f7631b;
+	width: 60%;
+	margin: auto;
+	padding-bottom: 5px;
+}
+
+#paslon .kandidat{
+	opacity: 0;
+	transform: translate(0, -50px);
+	transition: .5s;
+}
+
+#paslon .kandidat.tampil{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.quick-count{
+	color: #2880ce;
+}
+
+.quick-count::after{
+	content: '';
+	display: block;
+	border-bottom: 3px solid #f7631b;
+	width: 45%;
+	margin: auto;
+	padding-bottom: 5px;
+}
+
+.cara-voting{
+	color: #2880ce;
+}
+
+.cara-voting::after{
+	content: '';
+	display: block;
+	border-bottom: 3px solid #f7631b;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 5px;
+}
+
+.panduan{
+	color: #2880ce;
+}
+
+
+/*LIST CARA VOTING*/
+
+.box{
+	justify-content: center;
+	align-items: center;
+	border-bottom: 20px solid #2880ce;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;  
+}
+
+.box ul{
+	position: relative;
+	background: #fff;
+}
+
+.box ul li{
+	list-style: none;
+	padding: 10px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	transition: transform 0.5s; 
+}
+
+.box ul:hover li{
+	opacity: 0.2;
+
+}
+
+.box ul li:hover{
+	transform: scale(1.1);
+	z-index: 100;
+	background: #25bcff;
+	box-shadow: 0 5px 25px rgba(0,0,0,.2);
+	color: #fff;
+	opacity: 1;
+}
+
+.box ul li span{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background: #2880ce;
+	color: #fff;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 10px;
+	font-size: 12;
+	font-weight: 600;
+	transform: translateY(-2px);
+}
+
+.box ul li:hover span{
+	background: #f7631b;
+	color: #fff;
+}
+

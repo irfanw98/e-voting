@@ -1,0 +1,34 @@
+{
+    "name": "huddledigital/zendesk-laravel",
+    "type": "library",
+    "description": "Laravel wrapper for zendesk/zendesk_api_client_php package",
+    "keywords": ["zendesk"],
+    "homepage": "http://workwithhuddle.com",
+    "authors": [
+        {
+            "name": "Huddle Digital Ltd",
+            "email": "info@workwithhuddle.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.4|^6.0|^7.0|^8.0",
+        "zendesk/zendesk_api_client_php": "2.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Huddle\\Zendesk\\Providers\\ZendeskServiceProvider"
+            ],
+            "aliases": {
+                "Zendesk": "Huddle\\Zendesk\\Facades\\Zendesk"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Huddle\\Zendesk\\": "src"
+        }
+    },
+    "minimum-stability": "stable"
+}
